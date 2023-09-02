@@ -10,29 +10,36 @@
 </head>
 <body>
     <!--header section Start-->
-    <header class="container mx-auto">
+    <header class="max-w-full lg:container mx-auto my-8">
         <!--navbar section Start-->
-        <div class="navbar justify-between items-center bg-base-100 mt-6">
+        <div class="navbar flex justify-between items-center bg-base-100 mt-6">
             <div class="flex">
-              <img src="images/Logo.png" alt="">
+              <img class="w-20 lg:w-full" src="images/Logo.png" alt="">
             </div>
 
-            <div class="bg-gray-300 rounded-lg">
-                <button class="btn btn-ghost normal-case text-xl">Sort by view</button>
+            <div class="bg-gray-300 rounded-sm lg:rounded-lg">
+                <button class="btn btn-ghost normal-case lg:text-2xl text-xs">Sort by view</button>
             </div>
 
             <div class="flex-none">
-              <button class="btn  btn-ghost bg-red-600 text-white">Blog</button>
+              <a href="blog.html" class="btn lg:text-2xl text-xs bg-red-600 text-white lg:rounded-lg">Blog</a>
             </div>
         </div>
         <!--navbar section End-->
 
-        <hr class="border-2 mt-8">
+        <hr class=" border-2 mt-8 border-black">
     </header>
     <!--header section End-->
 
-    <main>
+    <!--main section Start-->
+    <main class="max-w-max pr-2 ps-2 container mx-auto my-6">
+        <section class="tab-container w-full">
+          <div class="tabs tabs md:p-5 lg:p-10 m-auto text-center flex justify-center" id="tab-container">
+          </div>
+        </section>
 
+        <section id="phero-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-5 gap-2 mt-10">
+        </section>
     </main>
     <script src="js/pHero.js"></script>
 </body>
