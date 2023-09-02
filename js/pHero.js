@@ -29,7 +29,7 @@ const handlepHeroNews = async (categoryId) =>{
         div.innerHTML = `
         <div class="card bg-base-100 shadow-xl">
             <figure><img class="max-h-40 relative w-full" src=${phero?.thumbnail}/></figure>
-            <div id="hour-minutes" class="absolute bg-gray-500 text-white w-12 left-60 top-32">${phero?.others.posted_date}</div>
+            
             <div class="card-body">
              <div class="flex">
               <h2 class="card-title ml-10">${phero.title}</h2>
